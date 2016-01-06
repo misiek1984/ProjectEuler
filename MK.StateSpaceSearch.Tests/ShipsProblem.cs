@@ -11,9 +11,9 @@ namespace MK.StateSpaceSearch.Tests
 {
     public static class Ports
     {
-        public const string Port1 = "Port1";
-        public const string Port2 = "Port2";
-        public const string Port3 = "Port3";
+        public const string Port1 = "A";
+        public const string Port2 = "B";
+        public const string Port3 = "C";
     }
 
     public class ShipProblemData
@@ -78,6 +78,14 @@ namespace MK.StateSpaceSearch.Tests
         }
     }
 
+    /// <summary>
+    /// There are 3 ports (A, B, C) and a ship that travels between them.
+    /// Before the ship sail from the ports a captain informs a port manager about a next destination.
+    /// The next port can be the same as the current one. The port manager writes this information in the special book. 
+    /// Knowing the last port visited by the ship and the book  for each port find a itinerary of the ship.
+    /// For example if the itinerary is equal to A -> B -> C -> A -> C -> B -> A then a book for the port A 
+    /// will contain records B, C, for the port B records C, A and for the port C records A, B. 
+    /// </summary>
     public class ShipProblem : IProblem<ShipProblemData>
     {
         private bool _withoutLastPort;
@@ -159,7 +167,7 @@ namespace MK.StateSpaceSearch.Tests
     }
 
     [TestClass]
-    public class ShipsProblem
+    public class Tests
     {
         private Dictionary<string, List<string>> _solutions;
         public Dictionary<string, List<string>> Solutions
@@ -249,8 +257,6 @@ namespace MK.StateSpaceSearch.Tests
                 return _solutions;
             }
         }
-
-        public TestContext TestContext { get; set; }
 
         [TestMethod]
         public void SolverProblem_DFSFringeWithoutLastPort_CorrectResult()
