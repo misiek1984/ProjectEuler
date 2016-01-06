@@ -79,12 +79,13 @@ namespace MK.StateSpaceSearch.Tests
     }
 
     /// <summary>
-    /// There are 3 ports (A, B, C) and a ship that travels between them.
-    /// Before the ship sail from the ports a captain informs a port manager about a next destination.
-    /// The next port can be the same as the current one. The port manager writes this information in the special book. 
-    /// Knowing the last port visited by the ship and the book  for each port find a itinerary of the ship.
-    /// For example if the itinerary is equal to A -> B -> C -> A -> C -> B -> A then a book for the port A 
-    /// will contain records B, C, for the port B records C, A and for the port C records A, B. 
+    /// MK.StateSpaceSearch.Tests project contains an example of solving a problem that I call Ship Problem. 
+    /// In this problem there are N ports and a ship that travels between them. A captain informs a port manager 
+    /// about a next destination before a departure. The next port can be the same as the current one. 
+    /// The port manager writes this information in the special book. Knowing the last port visited by the ship 
+    /// and the book for each port find a itinerary of the ship. For example if there are 3 ports (A, B, C) and 
+    /// the itinerary is equal to A -> B -> C -> A -> C -> B -> A then a book for the port A will contain records B, C, 
+    /// for the port B records C, A and for the port C records A, B.
     /// </summary>
     public class ShipProblem : IProblem<ShipProblemData>
     {
