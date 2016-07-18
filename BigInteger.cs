@@ -97,7 +97,7 @@ namespace ProjectEuler
             }
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public BigInteger(uint value)
         {
             if (value == 0)
@@ -144,7 +144,7 @@ namespace ProjectEuler
             }
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public BigInteger(ulong value)
         {
             if (value == 0)
@@ -254,7 +254,7 @@ namespace ProjectEuler
                 data[2] = (uint)bits[2];
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public BigInteger(byte[] value)
         {
             if (value == null)
@@ -451,7 +451,7 @@ namespace ProjectEuler
             return 0;
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static explicit operator uint(BigInteger value)
         {
             if (value.sign == 0)
@@ -469,7 +469,7 @@ namespace ProjectEuler
             return (short)val;
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static explicit operator ushort(BigInteger value)
         {
             uint val = (uint)value;
@@ -486,7 +486,7 @@ namespace ProjectEuler
             return (byte)val;
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static explicit operator sbyte(BigInteger value)
         {
             int val = (int)value;
@@ -529,7 +529,7 @@ namespace ProjectEuler
             return -((((long)high) << 32) | (long)low);
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static explicit operator ulong(BigInteger value)
         {
             if (value.sign == 0)
@@ -598,7 +598,7 @@ namespace ProjectEuler
             return new BigInteger(value);
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static implicit operator BigInteger(uint value)
         {
             return new BigInteger(value);
@@ -609,7 +609,7 @@ namespace ProjectEuler
             return new BigInteger(value);
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static implicit operator BigInteger(ushort value)
         {
             return new BigInteger(value);
@@ -620,7 +620,7 @@ namespace ProjectEuler
             return new BigInteger(value);
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static implicit operator BigInteger(sbyte value)
         {
             return new BigInteger(value);
@@ -631,7 +631,7 @@ namespace ProjectEuler
             return new BigInteger(value);
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static implicit operator BigInteger(ulong value)
         {
             return new BigInteger(value);
@@ -1239,13 +1239,13 @@ namespace ProjectEuler
         }
 
 
-        [CLSCompliantAttribute(false)]
+        
         public static bool operator <(BigInteger left, ulong right)
         {
             return left.CompareTo(right) < 0;
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static bool operator <(ulong left, BigInteger right)
         {
             return right.CompareTo(left) > 0;
@@ -1266,13 +1266,13 @@ namespace ProjectEuler
             return right.CompareTo(left) >= 0;
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static bool operator <=(BigInteger left, ulong right)
         {
             return left.CompareTo(right) <= 0;
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static bool operator <=(ulong left, BigInteger right)
         {
             return right.CompareTo(left) >= 0;
@@ -1293,13 +1293,13 @@ namespace ProjectEuler
             return right.CompareTo(left) < 0;
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static bool operator >(BigInteger left, ulong right)
         {
             return left.CompareTo(right) > 0;
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static bool operator >(ulong left, BigInteger right)
         {
             return right.CompareTo(left) < 0;
@@ -1320,13 +1320,13 @@ namespace ProjectEuler
             return right.CompareTo(left) <= 0;
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static bool operator >=(BigInteger left, ulong right)
         {
             return left.CompareTo(right) >= 0;
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static bool operator >=(ulong left, BigInteger right)
         {
             return right.CompareTo(left) <= 0;
@@ -1347,13 +1347,13 @@ namespace ProjectEuler
             return right.CompareTo(left) == 0;
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static bool operator ==(BigInteger left, ulong right)
         {
             return left.CompareTo(right) == 0;
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static bool operator ==(ulong left, BigInteger right)
         {
             return right.CompareTo(left) == 0;
@@ -1374,13 +1374,13 @@ namespace ProjectEuler
             return right.CompareTo(left) != 0;
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static bool operator !=(BigInteger left, ulong right)
         {
             return left.CompareTo(right) != 0;
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public static bool operator !=(ulong left, BigInteger right)
         {
             return right.CompareTo(left) != 0;
@@ -1960,7 +1960,7 @@ namespace ProjectEuler
             return Log(value, 10);
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public bool Equals(ulong other)
         {
             return CompareTo(other) == 0;
@@ -2022,7 +2022,7 @@ namespace ProjectEuler
             return Compare(this, other);
         }
 
-        [CLSCompliantAttribute(false)]
+        
         public int CompareTo(ulong other)
         {
             if (sign < 0)

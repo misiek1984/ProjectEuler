@@ -31,8 +31,6 @@ Find the sum of the only ordered set of six cyclic 4-digit numbers for which eac
 
         public static long Problem61()
         {
-            var sum = 0;
-
             var triangleDict = new Dictionary<long, int>();
             var squareDict = new Dictionary<long, int>();
             var pentagonalDict = new Dictionary<long, int>();
