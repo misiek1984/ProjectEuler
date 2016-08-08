@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MK.StateSpaceSearch", "MK.StateSpaceSearch\MK.StateSpaceSearch.csproj", "{DC0DAA62-68D3-46CA-B0D3-7FD269EBEBA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MK.StateSpaceSearch.Tests", "MK.StateSpaceSearch.Tests\MK.StateSpaceSearch.Tests.csproj", "{3A119A23-C423-4947-AABF-47D9C5F8441D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC0DAA62-68D3-46CA-B0D3-7FD269EBEBA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC0DAA62-68D3-46CA-B0D3-7FD269EBEBA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC0DAA62-68D3-46CA-B0D3-7FD269EBEBA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC0DAA62-68D3-46CA-B0D3-7FD269EBEBA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A119A23-C423-4947-AABF-47D9C5F8441D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A119A23-C423-4947-AABF-47D9C5F8441D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A119A23-C423-4947-AABF-47D9C5F8441D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A119A23-C423-4947-AABF-47D9C5F8441D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
