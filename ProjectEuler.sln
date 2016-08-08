@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler", "ProjectEuler.csproj", "{233BAE8D-8D5C-48AC-936E-5DAE2F7940CF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MK.StateSpaceSearch", "MK.StateSpaceSearch", "{E9348CE7-00C4-4E34-8B8E-F42CA520A496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MK.StateSpaceSearch", "MK.StateSpaceSearch\MK.StateSpaceSearch\MK.StateSpaceSearch.csproj", "{DC0DAA62-68D3-46CA-B0D3-7FD269EBEBA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MK.StateSpaceSearch.Tests", "MK.StateSpaceSearch\MK.StateSpaceSearch.Tests\MK.StateSpaceSearch.Tests.csproj", "{3A119A23-C423-4947-AABF-47D9C5F8441D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +21,20 @@ Global
 		{233BAE8D-8D5C-48AC-936E-5DAE2F7940CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{233BAE8D-8D5C-48AC-936E-5DAE2F7940CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{233BAE8D-8D5C-48AC-936E-5DAE2F7940CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC0DAA62-68D3-46CA-B0D3-7FD269EBEBA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC0DAA62-68D3-46CA-B0D3-7FD269EBEBA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC0DAA62-68D3-46CA-B0D3-7FD269EBEBA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC0DAA62-68D3-46CA-B0D3-7FD269EBEBA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A119A23-C423-4947-AABF-47D9C5F8441D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A119A23-C423-4947-AABF-47D9C5F8441D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A119A23-C423-4947-AABF-47D9C5F8441D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A119A23-C423-4947-AABF-47D9C5F8441D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DC0DAA62-68D3-46CA-B0D3-7FD269EBEBA8} = {E9348CE7-00C4-4E34-8B8E-F42CA520A496}
+		{3A119A23-C423-4947-AABF-47D9C5F8441D} = {E9348CE7-00C4-4E34-8B8E-F42CA520A496}
 	EndGlobalSection
 EndGlobal
